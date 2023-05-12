@@ -20,7 +20,6 @@ export const useFetch = (url) => {
             isLoading: false,
             hasError:null
         })
-        console.log(data)
     }
     useEffect(()=>{
         getFetch()
@@ -29,11 +28,7 @@ export const useFetch = (url) => {
   
   
     return{
-        data: {
-        image:state.data.image,
-        id:state.data.id,
-        name:state.data.name
-    },
+        data: state.data,
         isLoading: state.isLoading,
         hasError: state.hasError
     }
