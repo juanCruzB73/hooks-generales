@@ -1,0 +1,12 @@
+1-Es una funcion comun y corriente
+2-funcion pura{
+    a.no debe tener efectos secundarios
+    b.no debe tener tareas asincronas
+    c.simpre retorna un nuevo estado
+    d.no llama al localStorage y al sessionStorage
+    e.requiere una sola accion
+}
+3-retorna nuevo estado
+5-recibe dos argumentos(intialState) y la accion a ejecturar
+*FUNCIONAMIENTO*
+    state[arreglo]-->vista-->action(agregar todo/borrar/actualizar)..>state

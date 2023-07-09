@@ -10,8 +10,8 @@ export const useCounter = (initialValue)=>{
     const reset = ()=>{setCounter(initialValue)}
 
     const decrement = ()=>{
-        if(counter===0)return
-        setCounter(counter-1)
+        counter > 1 ? setCounter(counter-1) : none
+        
     }
 
     const sumarDos = (value)=>{
