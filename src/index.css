@@ -5,3 +5,9 @@ body{
 button{
     margin: 10px
 }
+nav{
+    background-color: rgb(44, 44, 44);
+}
+a{
+    margin-right: 5px;
+}

@@ -1,0 +1,8 @@
+summary:
+context: tiene valores actualizados que se pueden usar en distintos componentes
+provider
+useContext
+React Router
+Links y  NavLinks
+createContext
+SPA(Single Page Aplication)

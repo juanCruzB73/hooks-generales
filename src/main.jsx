@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 //import { FormWithCustomHook } from './02.useEffect/FormWithCustomHook'
 //import { HooksApp } from './HooksApp'
 //import { CounterApp } from './01-useState/CounterApp'
@@ -10,13 +11,16 @@ import ReactDOM from 'react-dom/client'
 //import { Layout } from './05-useLayoutEffect/Layout'
 //import { Memorize } from './06-memos/memorize'
 //import { CallbacHook } from './06-memos/CallbackHook'
-import { TodoApp } from './08-useReducer/TodoApp'
+//import { TodoApp } from './08-useReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
 import './index.css'
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <TodoApp />
-  </React.StrictMode>,
+  <BrowserRouter>{/*high order componenet(recibe componentes)*/}
+  {/*<React.StrictMode>*/}
+    <MainApp />
+ {/*</React.StrictMode>*/}
+ </BrowserRouter>
 )
