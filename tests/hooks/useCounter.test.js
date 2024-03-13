@@ -21,7 +21,7 @@ describe('useCounter test', () => {
 
     test("debe incrementar el contador",()=>{
         const{result}=renderHook(()=>useCounter());
-        const {counter,increment}=result.current;
+        const {increment}=result.current;
 
         act(()=>{
             increment();
