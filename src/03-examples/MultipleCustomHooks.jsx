@@ -16,8 +16,8 @@ export const MultipleCustomHooks = () =>{
         isLoading ? <Loading/> : <Character data={data}/>
         }
 
-        <button className="btn ntn-primary" onClick={()=>increment()}>Next character</button>
-        <button className="btn ntn-primary" onClick={()=>decrement()}>Previus character</button>    
+        <button className="btn ntn-primary" disabled={isLoading} onClick={()=>increment()}>Next character</button>
+        <button className="btn ntn-primary" disabled={isLoading} onClick={()=>decrement()}>Previus character</button>    
         <footer className="blockquote-footer">App de juan</footer>
         <p className="mb-1">footer</p>
         </>
